@@ -1,1 +1,1 @@
-export const A = 'UGU'
+export * from './middlewares/path-parameter-checker';
