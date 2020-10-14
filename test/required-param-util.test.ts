@@ -18,7 +18,7 @@ describe('Required Params Lambda utils', () => {
         }
     }
 
-    test('Simple test with existing and valid parameters and schema.', async () => {
+    test('Test with existing and valid parameters and schema.', async () => {
         const sampleId = "SAMPLE_ID_VALUE";
         const sampleNumber = 217635821123;
         const sampleBool = false;
@@ -35,7 +35,7 @@ describe('Required Params Lambda utils', () => {
         expect(result.pathParameters.sampleBool).toBe(sampleBool);
     });
 
-    test('Simple test with existing wrong parameters', async () => {
+    test('Test with existing wrong parameters', async () => {
         const sampleAwsHttpEvent: APIGatewayEventLike = {
             body: '',
             pathParameters: {
@@ -53,7 +53,7 @@ describe('Required Params Lambda utils', () => {
         }
     });
 
-    test('Simple test with missing parameters', async () => {
+    test('Test with missing parameters', async () => {
         const sampleAwsHttpEvent: APIGatewayEventLike = {
             body: '',
             pathParameters: {}
@@ -68,7 +68,7 @@ describe('Required Params Lambda utils', () => {
     });
 
 
-    test('Simple test with big numbers parameters', async () => {
+    test('Test with big numbers parameters', async () => {
         const sampleId = "SAMPLE_ID_VALUE";
         const bigNumber = Math.pow(Number.MAX_SAFE_INTEGER, 3);
         const sampleBool = true;
