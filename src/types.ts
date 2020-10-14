@@ -1,5 +1,4 @@
-import {APIGatewayEvent, APIGatewayProxyResult} from "aws-lambda";
-import middy from "@middy/core";
-import MiddlewareObject = middy.MiddlewareObject;
+import { APIGatewayEvent } from 'aws-lambda';
 
-export type MiddyApiGatewayProxyMiddleware = () => MiddlewareObject<APIGatewayEvent, APIGatewayProxyResult>;
+
+export type APIGatewayEventLike = Pick<APIGatewayEvent, 'pathParameters' | 'body'> & Partial<APIGatewayEvent>

@@ -1,3 +1,4 @@
+/*
 import middy from '@middy/core';
 import {
     APIGatewayEvent,
@@ -38,3 +39,5 @@ const augmentedHandler = middy(sampleHandler)
         customerId: 'dawidhawd',
         test: 'bob'
     }));
+*/
+export const dummy =  '';
