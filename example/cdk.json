@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node cdk-stack/bin/aws-lambda-middlewares-examples.ts",
+  "app": "npx ts-node cdk-stack/bin/aws-lambda-commons-examples.ts",
   "context": {
     "@db:example-table": "example-table",
     "@s3:example-assets": "example-assets",

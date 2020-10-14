@@ -32,7 +32,7 @@ export class AwsLambdaMiddlewaresExamplesAPI extends Construct {
     const runtime = Runtime.NODEJS_12_X;
 
 
-    const restApi = new RestApi( this, `aws-lambda-middlewares-examples-api-${stage}`, {
+    const restApi = new RestApi( this, `aws-lambda-commons-examples-api-${stage}`, {
       deployOptions: {
         stageName: stage,
       },
