@@ -16,7 +16,7 @@ export const checkRequiredParams: <P extends PathParameterTypeMap, ParamReturnTy
         pathParameters: {}
     } as RequiredParamsCheckResult<any>
 
-    // If no parameters where passed and the provided path parameters are also empty everything is fine and we can return none which states there are no validation errors.
+    // If no parameters have been passed and the specified path parameters are also empty, everything is fine and we can return an empty object saying that there are no validation errors.
     if ( (!params || Object.keys(params).length === 0) && !eventParameters ) {
         return result;
     }
